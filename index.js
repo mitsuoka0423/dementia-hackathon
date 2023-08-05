@@ -127,7 +127,7 @@ const Page = () => {
 
   return (
     <div className="uk-container-xsmall">
-      <HelpMark />
+      <HelpMarkPage />
 
       <hr className="uk-divider-icon"></hr>
 

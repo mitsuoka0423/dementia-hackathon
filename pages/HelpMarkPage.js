@@ -1,4 +1,4 @@
-const HelpMark = () => {
+const HelpMarkPage = () => {
   return (
     <div>
       <img src="./img/help-mark.png" width="100%"></img>
