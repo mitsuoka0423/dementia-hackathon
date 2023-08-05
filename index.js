@@ -158,7 +158,7 @@ const Page = () => {
   const [apiKey, setApiKey] = usePersist('apiKey', "");
 
   return (
-    <div>
+    <div className="uk-container-xsmall">
       <div>
         <img src="./img/help-mark.png" width="100%"></img>
         <div className="uk-text-large">
