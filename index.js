@@ -119,39 +119,6 @@ const postChatCompletion = async (apiKey, input, model = 'gpt-3.5-turbo') => {
     });
 };
 
-const Input = ({
-  label,
-  value,
-  type = "text",
-  id = "",
-  disabled = false,
-  onChange = () => { },
-}) => {
-  return (
-    <div className="uk-margin">
-      <label className="uk-form-label" htmlFor={id}>{label}</label>
-      <input className="uk-input" type={type} id={id} value={value} onChange={onChange} disabled={disabled} />
-    </div>
-  );
-};
-
-const TextArea = ({
-  label,
-  value,
-  id = "",
-  disabled = false,
-  height,
-}) => {
-  return (
-    <div className="uk-margin">
-      <label className="uk-form-label" htmlFor={id}>{label}</label>
-      <div className="uk-form-controls">
-        <textarea className="uk-textarea" id={id} value={value} disabled={disabled} style={{ height }}></textarea>
-      </div>
-    </div>
-  );
-};
-
 const Page = () => {
   const [listenState, setListenState] = useState("ready");
   const [speechList, setSpeechList] = useState([]);
@@ -160,13 +127,7 @@ const Page = () => {
 
   return (
     <div className="uk-container-xsmall">
-      <div>
-        <img src="./img/help-mark.png" width="100%"></img>
-        <div className="uk-text-large">
-          <div className="uk-text-bold ">私は若年性認知症です</div>
-          <div>皆さんの協力を必要としています</div>
-        </div>
-      </div>
+      <HelpMark />
 
       <hr className="uk-divider-icon"></hr>
 
