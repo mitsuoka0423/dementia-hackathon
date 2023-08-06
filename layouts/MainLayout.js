@@ -1,4 +1,4 @@
-const NavbarLayout = ({ children, setRoute, routes }) => {
+const MainLayout = ({ children, setRoute, routes }) => {
   return (
     <div>
       <div className="uk-container">

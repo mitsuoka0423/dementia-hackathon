@@ -28,11 +28,11 @@ const Page = () => {
 
   return (
     <div className="main">
-      <NavbarLayout setRoute={setRoute} routes={ROUTES}>
+      <MainLayout setRoute={setRoute} routes={ROUTES}>
         {
           routing(route)
         }
-      </NavbarLayout>
+      </MainLayout>
     </div>
   );
 };
