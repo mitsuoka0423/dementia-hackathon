@@ -53,3 +53,10 @@
   height: auto;
   border-radius: 50%;
 }
+
+.timeline-page {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}

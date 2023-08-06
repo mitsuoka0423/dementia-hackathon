@@ -15,10 +15,10 @@ const routing = (route) => {
       return <HelpMarkPage />;
     case ROUTES.PROFILE:
       return <ProfilePage />;
-    case ROUTES.RECORDING:
-      return <RecordingPage />;
+    case ROUTES.TIMELINE:
+      return <TimelinePage />;
     default:
-      return <RecordingPage />;
+      return <HelpMarkPage />;
   };
 }
 

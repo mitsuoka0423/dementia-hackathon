@@ -11,7 +11,7 @@ const MainLayout = ({ children, setRoute, routes }) => {
         <button onClick={() => { setRoute(routes.PROFILE) }} className="navbar-item navbar-button">
           <img src="./img/profile.png" className="navbar-button-img"></img>
         </button>
-        <button onClick={() => { setRoute(routes.HELP_MARK) }} className="navbar-item navbar-button">
+        <button onClick={() => { setRoute(routes.TIMELINE) }} className="navbar-item navbar-button">
           <img src="./img/note.png" className="navbar-button-img"></img>
         </button>
       </nav>
