@@ -1,6 +1,7 @@
 .main {
   position: relative;
   padding-top: 96px;
+  color: #000101;
 }
 
 .icon {
@@ -21,6 +22,11 @@
 
 .navbar-item {
   flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }
 
 .navbar-button {
