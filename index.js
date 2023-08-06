@@ -24,6 +24,7 @@ const routing = (route) => {
 
 const Page = () => {
   const [route, setRoute] = useState('');
+  const [userId, setUserId] = useState('');
 
   return (
     <div className="main">
@@ -36,7 +37,15 @@ const Page = () => {
   );
 };
 
-liff
+screen.orientation.lock();
+
+console.log(document.domain);
+if (document.domain === '127.0.0.1' || document.domain === 'localhost') {
+  const domContainer = document.querySelector('#root-render');
+  const root = ReactDOM.createRoot(domContainer);
+  root.render(createElement(Page));
+} else {
+  liff
   .init({ liffId: '2000323157-gP2ZWyMN' })
   .then(() => {
     if (!liff.isLoggedIn()) {
@@ -44,6 +53,7 @@ liff
       return;
     }
 
+    setUserId(liff.getProfile().userId);
     const domContainer = document.querySelector('#root-render');
     const root = ReactDOM.createRoot(domContainer);
     root.render(createElement(Page));
@@ -51,3 +61,4 @@ liff
   .catch((e) => {
     alert(`LIFF error: ${e.message}`)
   });
+}
