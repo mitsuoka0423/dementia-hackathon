@@ -45,7 +45,7 @@ const items = [
   {
     type: 'image',
     createdAt: new Date('2023-08-06 10:39:05'),
-    content: './img/picture.jpeg'
+    content: './img/picture.jpg'
   },
   {
     type: 'text',
@@ -96,7 +96,7 @@ const TimelinePage = () => {
         speechList.sort((a, b) => a.createdAt < b.createdAt ? 1 : -1).map((content) => generateTimelineContent(content))
       }
       <div className="timeline-page-record-buttons">
-        <button className="timeline-page-record-buttons-button">
+        <button className="timeline-page-record-buttons-button" onClick={() => alert('今後実装予定です！')}>
           <img src="./img/camera.png" className="icon"></img>
         </button>
         <button className="timeline-page-record-buttons-button" onClick={() => {
