@@ -57,6 +57,46 @@
 .timeline-page {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.timeline-page-now {
+  text-align: center;
+}
+
+.timeline-page-line {
+  display: flex;
+  height: 32px;
+}
+
+.timeline-page-line-start {
+  display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.timeline-page-line-start-ball {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #CCCCCC;
+}
+
+.timeline-page-line-item {
+  flex: 1;
+}
+
+.timeline-page-line-item-left {
+  border-right: solid 2px #CCCCCC;
+}
+
+.timeline-page-item {
+  padding: 8px;
+}
+
+.timeline-page-item-content-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
