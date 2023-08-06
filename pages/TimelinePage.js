@@ -15,6 +15,16 @@ const TimelinePage = () => {
       createdAt: new Date('2023-08-06 10:30:00'),
       content: 'エンジニアカフェに行くにはどのバス停で降りたら良いですか？'
     },
+    {
+      type: 'text',
+      createdAt: new Date('2023-08-06 10:36:05'),
+      content: '天神大和証券前で降りてください'
+    },
+    {
+      type: 'text',
+      createdAt: new Date('2023-08-06 10:35:00'),
+      content: 'エンジニアカフェに行くにはどのバス停で降りたら良いですか？'
+    },
   ];
 
   const generateTimelineContent = (item) => {
@@ -48,7 +58,7 @@ const TimelinePage = () => {
         <div className="timeline-page-line-start-ball"></div>
       </div>
       {
-        items.map((content) => generateTimelineContent(content))
+        items.sort((a, b) => a.createdAt < b.createdAt ? 1 : -1).map((content) => generateTimelineContent(content))
       }
     </div>
   );
