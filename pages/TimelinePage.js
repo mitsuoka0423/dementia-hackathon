@@ -60,6 +60,10 @@ const TimelinePage = () => {
       {
         items.sort((a, b) => a.createdAt < b.createdAt ? 1 : -1).map((content) => generateTimelineContent(content))
       }
+      <div className="timeline-page-record-buttons">
+        <button className="timeline-page-record-buttons-button">写真</button>
+        <button className="timeline-page-record-buttons-button">録音</button>
+      </div>
     </div>
   );
 };

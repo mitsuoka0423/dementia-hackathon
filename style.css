@@ -56,7 +56,24 @@
   display: flex;
   flex-direction: column;
   height: 100%;
+  padding-bottom: 100px;
   overflow-y: scroll;
+}
+
+.timeline-page-record-buttons {
+  position: fixed;
+  display: flex;
+  gap: 16px;
+  bottom: 16px;
+  right: 16px;
+}
+
+.timeline-page-record-buttons-button {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: #f9d8c1;
+  border: solid 2px #f9d8c1;
 }
 
 .timeline-page-now {
