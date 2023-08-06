@@ -37,10 +37,11 @@ const Page = () => {
   );
 };
 
-screen.orientation.lock();
 
 console.log(document.domain);
-if (document.domain === '127.0.0.1' || document.domain === 'localhost') {
+const isDev = document.domain === '127.0.0.1' || document.domain === 'localhost';
+
+if (isDev) {
   const domContainer = document.querySelector('#root-render');
   const root = ReactDOM.createRoot(domContainer);
   root.render(createElement(Page));
