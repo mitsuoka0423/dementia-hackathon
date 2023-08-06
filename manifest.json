@@ -3,7 +3,7 @@
   "name": "Sovinnon",
   "icons": [
     {
-      "src": "logo512.png",
+      "src": "logo/logo512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
