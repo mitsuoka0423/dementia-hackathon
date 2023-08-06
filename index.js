@@ -36,6 +36,18 @@ const Page = () => {
   );
 };
 
-const domContainer = document.querySelector('#root-render');
-const root = ReactDOM.createRoot(domContainer);
-root.render(createElement(Page));
+liff
+  .init({ liffId: '2000323157-gP2ZWyMN' })
+  .then(() => {
+    if (!liff.isLoggedIn()) {
+      liff.login();
+      return;
+    }
+
+    const domContainer = document.querySelector('#root-render');
+    const root = ReactDOM.createRoot(domContainer);
+    root.render(createElement(Page));
+  })
+  .catch((e) => {
+    alert(`LIFF error: ${e.message}`)
+  });
