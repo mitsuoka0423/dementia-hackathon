@@ -41,32 +41,32 @@ const Page = () => {
 console.log(document.domain);
 const isDev = document.domain === '127.0.0.1' || document.domain === 'localhost';
 
-// if (isDev) {
+if (isDev) {
   const domContainer = document.querySelector('#root-render');
   const root = ReactDOM.createRoot(domContainer);
   root.render(createElement(Page));
-// } else {
-//   console.log('[START]liff.init');
-//   liff
-//     .init({ liffId: '2000323157-gP2ZWyMN' })
-//     .then(() => {
-//       console.log(`[START]liff.isLoggedIn: ${liff.isLoggedIn()}`);
-//       if (!liff.isLoggedIn()) {
-//         console.log('[START]liff.login');
-//         liff.login();
-//         return;
-//       }
+} else {
+  console.log('[START]liff.init');
+  liff
+    .init({ liffId: '2000323157-gP2ZWyMN' })
+    .then(() => {
+      console.log(`[START]liff.isLoggedIn: ${liff.isLoggedIn()}`);
+      if (!liff.isLoggedIn()) {
+        console.log('[START]liff.login');
+        liff.login();
+        return;
+      }
 
-//       console.log('[START]ReactDOM.createRoot');
-//       const domContainer = document.querySelector('#root-render');
-//       const root = ReactDOM.createRoot(domContainer);
-//       root.render(createElement(Page));
-//       console.log('[END]ReactDOM.createRoot');
-//     })
-//     .catch((e) => {
-//       alert(`LIFF error: ${e.message}`);
-//     })
-//     .finally(() => {
-//       console.log('[END]liff.init');
-//     });
-// }
+      console.log('[START]ReactDOM.createRoot');
+      const domContainer = document.querySelector('#root-render');
+      const root = ReactDOM.createRoot(domContainer);
+      root.render(createElement(Page));
+      console.log('[END]ReactDOM.createRoot');
+    })
+    .catch((e) => {
+      alert(`LIFF error: ${e.message}`);
+    })
+    .finally(() => {
+      console.log('[END]liff.init');
+    });
+}
