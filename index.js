@@ -17,8 +17,6 @@ const routing = (route) => {
       return <ProfilePage />;
     case ROUTES.RECORDING:
       return <RecordingPage />;
-    case ROUTES.MENU:
-      return <MenuPage />;
     default:
       return <RecordingPage />;
   };
