@@ -25,7 +25,7 @@ const routing = (route) => {
 }
 
 const Page = () => {
-  const [route, setRoute] = useState('');
+  const [route, setRoute] = useState(ROUTES.HELP_MARK);
 
   return (
     <div className="main">

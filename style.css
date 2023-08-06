@@ -30,6 +30,17 @@
   height: 40px;
 }
 
+.help-mark-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.help-mark-page-img {
+  width: 90%;
+  height: auto;
+}
+
 .profile-page {
   display: flex;
   flex-direction: column;
