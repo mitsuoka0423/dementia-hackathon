@@ -125,10 +125,6 @@ const RecordingPage = () => {
 
   return (
     <div className="uk-container-xsmall">
-      <HelpMarkPage />
-
-      <hr className="uk-divider-icon"></hr>
-
       {/* <TextArea label="聞き取り結果" value={speechList.map(speech => speech.content).join("\n")} height={"300px"} disabled></TextArea> */}
       <div>
         <ul>

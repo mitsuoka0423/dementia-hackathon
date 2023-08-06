@@ -1,4 +1,4 @@
-const TopPage = () => {
+const MenuPage = () => {
   return (
     <div>
       <div>ロゴ</div>

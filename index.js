@@ -3,7 +3,7 @@
 const { createElement, useState } = React;
 
 const ROUTES = {
-  TOP: 'top',
+  MENU: 'menu',
   HELP_MARK: 'help-mark',
   PROFILE: 'profile',
   RECORDING: 'recording',
@@ -17,14 +17,15 @@ const routing = (route) => {
       return <ProfilePage />;
     case ROUTES.RECORDING:
       return <RecordingPage />;
-    case ROUTES.TOP:
+    case ROUTES.MENU:
+      return <MenuPage />;
     default:
-      return <TopPage />;
+      return <RecordingPage />;
   };
 }
 
 const Page = () => {
-  const [route, setRoute] = useState(ROUTES.HELP_MARK);
+  const [route, setRoute] = useState('');
 
   return (
     <div className="main">
