@@ -96,8 +96,15 @@ const TimelinePage = () => {
         speechList.sort((a, b) => a.createdAt < b.createdAt ? 1 : -1).map((content) => generateTimelineContent(content))
       }
       <div className="timeline-page-record-buttons">
-        <button className="timeline-page-record-buttons-button">写真</button>
-        <button className="timeline-page-record-buttons-button" onClick={() => start(speechList, setSpeechList)}>録音</button>
+        <button className="timeline-page-record-buttons-button">
+          <img src="./img/camera.png" className="icon"></img>
+        </button>
+        <button className="timeline-page-record-buttons-button" onClick={() => {
+            window.scroll({top: 0, behavior: 'smooth'});
+            start(speechList, setSpeechList);
+          }}>
+          <img src="./img/mic.png" className="icon"></img>
+        </button>
       </div>
     </div>
   );
