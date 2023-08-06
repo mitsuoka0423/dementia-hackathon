@@ -53,7 +53,6 @@ if (document.domain === '127.0.0.1' || document.domain === 'localhost') {
       return;
     }
 
-    setUserId(liff.getProfile().userId);
     const domContainer = document.querySelector('#root-render');
     const root = ReactDOM.createRoot(domContainer);
     root.render(createElement(Page));
