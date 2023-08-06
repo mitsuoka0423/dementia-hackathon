@@ -50,7 +50,7 @@ const items = [
   {
     type: 'text',
     createdAt: new Date('2023-08-06 10:30:05'),
-    content: '天神大和証券前で降りてください'
+    content: '天神4丁目で降りてください'
   },
   {
     type: 'text',
