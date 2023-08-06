@@ -39,6 +39,10 @@
   height: 40px;
 }
 
+.navbar-button-text {
+  color: #000101;
+}
+
 .help-mark-page {
   display: flex;
   align-items: center;
