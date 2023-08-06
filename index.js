@@ -23,7 +23,7 @@ const routing = (route) => {
 }
 
 const Page = () => {
-  const [route, setRoute] = useState(ROUTES.TIMELINE);
+  const [route, setRoute] = useState('');
 
   return (
     <div className="main">
